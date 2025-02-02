@@ -1,0 +1,685 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto+Condensed:ital@0;1&display=swap');
+
+:root{
+    --textColor: black;
+    --backColor: white;
+}
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Marcellus", serif;
+    
+
+}
+.poppins-regular {
+    font-family: Poppins, serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.marcellus-regular {
+    font-family: "Marcellus", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+    
+
+html,body{
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    position: relative;
+    
+}
+header{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.222);
+}
+
+header nav{
+    width: 100%;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    margin: 10px 25px;
+    
+}
+
+header nav .links{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    gap: 50px;
+}
+
+header nav .links li a{
+    color: var(--textColor);
+    text-decoration: none;
+    font-weight: 400;
+    font-family: serif;
+    transition: all 0.2s ease-in-out;
+}
+
+header nav .links li a:hover{
+    color: rgb(247, 128, 148);
+    
+}
+
+header nav .side-links{
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+}
+
+
+main .first{
+    width: 96vw;
+    margin: 10px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+main .first .first-box{
+    width: 100%;
+    height: 100vh;
+    background-image: url("E-assests/bg1.jpg");
+    background-position: center;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+main .first .first-box .box-content{
+    width: 45%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;  
+}
+
+main .first .first-box .box-content .box-text{
+    margin: 30px;
+    
+}
+
+main .first .first-box .box-content .box-text h4{
+    font-size: 12px;
+    color: white;
+    font-weight: 300;
+    padding: 10px 0px;
+}
+
+main .first .first-box .box-content .box-text #heading-para{
+    font-size: 65px;
+    color: white;
+    font-weight: 400;
+    line-height: 65px;
+}
+
+main .first .first-box .box-content .box-text #heading-para + p{
+    color: white;
+    font-size: 18px;
+}
+
+
+
+main .first .first-box .box-content .box-button{
+    margin: 0px 30px;
+}
+main .first .first-box .box-content .box-button button{
+    padding:10px 35px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+
+main .first .first-link-boxes{
+    width: 100%;
+    height: 250px;
+    display: flex;
+    justify-content:space-evenly;
+    align-items: center;
+    gap: 25px;
+}
+
+main .first .first-link-boxes .box{
+    width: 230px;
+    height: 110px;
+    /* background-color: red; */
+    border: 1px solid rgba(222, 214, 214, 0.658);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main .second{
+    width: 96vw;
+    margin: 50px 20px;  
+}
+
+main .second .second-head{
+    width: 100%;
+    height: 50px;
+    text-align: center;
+    margin-top: 50px;
+}
+
+main .second .second-head h4{
+    font-size: 13px;
+    line-height: 16px;
+    color: rgb(93, 91, 91);
+    font-weight: 400;
+}
+
+main .second .second-head h2{
+    font-size: 43px;
+    line-height: 43px;
+    font-weight: 400;
+    color: rgb(0, 0, 0);
+}
+
+main .second .second-products{
+    width: 100%;
+    margin: 20px 0px;
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+main .second .second-products .prod{
+    width: 340px;
+    height: 550px;
+    background-color: red;
+}
+
+main .second .second-products .product-box-1{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+main .second .second-products #sec-prod-1{
+    background-image: url("E-assests/bottle3.jpg");
+    background-position: center;
+}
+
+main .second .second-products #sec-prod-1 button{
+    padding: 8px;
+    border: none;
+    border-radius: 23px;
+    background-color: white;
+    margin: 25px;
+    cursor: pointer;
+    box-shadow: 0px 1px 15px rgba(36, 35, 35, 0.441);
+}
+
+main .second .second-products #sec-prod-2{
+    background-image: url("E-assests/bottle1.jpg");
+    background-position: center;
+}
+
+main .second .second-products #sec-prod-2 button{
+    padding: 8px;
+    border: none;
+    border-radius: 23px;
+    background-color: white;
+    margin: 25px;
+    cursor: pointer;
+    box-shadow: 0px 1px 15px rgba(36, 35, 35, 0.441);
+}
+
+main .second .second-products #sec-prod-3{
+    background-image: url("E-assests/bottle4.jpg");
+    background-position: center;
+}
+
+main .second .second-products #sec-prod-3 button{
+    padding: 8px;
+    border: none;
+    border-radius: 23px;
+    background-color: white;
+    margin: 25px;
+    cursor: pointer;
+    box-shadow: 0px 1px 15px rgba(36, 35, 35, 0.441);
+}
+
+main .second .second-products #sec-prod-4{
+    background-image: url("E-assests/bottle3.jpg");
+    background-position: center;
+}
+
+main .second .second-products #sec-prod-4 button{
+    padding: 8px;
+    border: none;
+    border-radius: 23px;
+    background-color: white;
+    margin: 25px;
+    cursor: pointer;
+    box-shadow: 0px 1px 15px rgba(36, 35, 35, 0.441);
+}
+
+.prod-1-text h2{
+    padding: 5px 0px;
+    font-size: 16px;
+    line-height: 16px;
+    color: rgb(0, 0, 0);
+}
+
+.prod-1-text #cut-span{
+    text-decoration:line-through;
+    opacity: 0.8;
+    color: grey;
+}
+
+main .third{
+    width: 96vw;
+    margin: 10px 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main .third .third-box{
+    width: 100%;
+    height: 100vh;
+    background-image: url("E-assests/bg-2.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+main .third .third-box .third-box-content{
+    width: 50%;
+    height: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+main .third .third-box .third-box-content .third-box-text{
+    margin: 30px;
+}
+
+main .third .third-box .third-box-content .third-box-text h4{
+    font-size: 12px;
+    color: white;
+    font-weight: 300;
+    padding: 10px 0px;
+}
+
+main .third .third-box .third-box-content .third-box-text #heading-para-2{
+    font-size: 65px;
+    color: white;
+    font-weight: 400;
+    line-height: 65px;
+}
+
+main .third .third-box .third-box-content .third-box-text #heading-para-2 + p{
+    color: white;
+    font-size: 18px;
+}
+
+main .third .third-box .third-box-content .third-box-button{
+    margin: 0px 30px;
+}
+
+main .third .third-box .third-box-content .third-box-button button{
+    padding:10px 35px;
+    color: black;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+main .forth{
+    width: 96vw;
+    margin: 10px 20px;
+    display: flex;
+    justify-content: space-between;  
+}
+
+main .forth .fourth-main-text{
+    width: 45%;
+    height: 200px;
+    margin: 20px;
+    overflow:hidden;   
+}
+
+main .forth .fourth-main-text h2{
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 15px;
+}
+
+main .forth .fourth-main-text h2 + p{
+    font-size: 40px;
+}
+
+main .forth .fourth-side-text{
+    width: 50%;
+    height: 100vh;
+    margin: 20px;
+    align-self: right ;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+main .forth .fourth-side-text .side-text{
+     width: 70%;
+     height: 200px;
+     align-self: right;
+     
+     
+}
+
+main .forth .fourth-side-text .side-text h3{
+   margin-bottom: 10px;
+   letter-spacing: 3px;
+}
+
+main .forth .fourth-side-text .side-text p{
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: black;
+    font-family: poppins, sans-serif;
+    
+
+}
+
+main .forth .fourth-side-text .side-text h2{
+    font-size: 13px;
+    font-weight: 300;
+    margin: 30px 0px;
+    padding: 0px;    
+}
+
+main .forth .fourth-side-text .side-text .side-line{
+    width: 40px;
+    height: 1px;
+    background-color: red;
+}
+
+main .five{
+    width: 100%;
+    /* margin: 10px 20px; */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+    
+}
+
+main .five .five-box-1{
+    width: 48%;
+    height: 500px;
+    background-image: url("E-assests/bg-001.jpg");
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+}
+
+
+main .five .five-box-1 .text{
+    width: 50%;
+    margin: 0px 20px;
+    text-align: start;
+}
+
+main .five .five-box-1 .text h3{
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: white;
+}
+
+main .five .five-box-1 .text h3 + p{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 49px;
+    color: white;
+}
+
+main .five .five-box-1 .text p + p{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+
+main .five .five-box-1 .five-box-button{
+    margin: 10px 20px;
+   
+
+}
+
+main .five .five-box-1 .five-box-button button{
+    padding: 5px 10px;
+    color: black;
+    background-color: white;
+    border: none;
+
+}
+
+
+
+main .five .five-box-2{
+    width: 48%;
+    height: 500px;
+    background-image: url("E-assests/bg-002.jpg");
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    
+}
+
+
+main .five .five-box-2 .text{
+    width: 50%;
+    margin: 0px 20px;
+    text-align: start;
+    
+}
+
+main .five .five-box-2 .text h3{
+    font-size: 13px;
+    font-weight: 300;
+    margin-bottom: 10px;
+    color: white;
+}
+
+main .five .five-box-2 .text h3 + p{
+    font-size: 48px;
+    font-weight: 500;
+    line-height: 49px;
+    color: white;
+}
+
+main .five .five-box-2 .text p + p{
+    font-size: 18px;
+    font-weight: 400;
+    color: white;
+}
+
+
+main .five .five-box-2 .five-box-button{
+    margin: 10px 20px;
+}
+
+main .five .five-box-2 .five-box-button button{
+    padding: 5px 10px;
+    color: black;
+    background-color: white;
+    border: none;
+}
+
+main .six{
+    width: 95vw;
+    height: 180px;
+    margin: 50px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+main .six .boxes{
+    display: flex;
+    gap: 25px;
+}
+
+main .six .boxes .box{
+    width: 320px;
+    height: 250px;
+   
+    display: flex;
+    justify-content: center;
+
+}
+
+main .six .boxes .box > h2{
+    margin: 10px 0px ;
+}
+
+main .six .boxes .box .text{
+   margin: 5px 20px;
+}
+
+main .six .six-text h2{
+    font-size: 18px;
+    font-weight: 400;
+}
+
+main .six .six-text #bottom-line{
+    width: 50px;
+    height: 1px;
+    margin: 20px 0px ;
+    background-color: red;
+}
+footer{
+    margin: 20px 0px;
+    width: 95vw; 
+}
+
+footer .footer-head{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0px 20px;
+    background-color: #F6EDF0;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.222);
+}
+
+footer .footer-head h2{
+    margin: 0px 20px;
+    font-weight: 300;
+}
+
+footer .footer-head .footer-input{
+    margin: 5px 20px;
+    display: flex;
+    gap: 25px;
+}
+
+footer .footer-head .footer-input input{
+    width: 600px;
+    padding: 15px 120px;
+    background-color: white;
+    border: none;
+}
+
+
+
+footer .footer-head .footer-input button{
+    padding: 10px 20px;
+    background-color: black;
+    color: white;
+    font-size: 18px;
+    border: none;
+}
+
+footer .middle-fotter{
+    width: 100%;
+    margin: 0px 20px;
+    height: 200px;
+    background-color: #F6EDF0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid rgba(128, 128, 128, 0.222);
+}
+
+footer .middle-fotter .footer-img{
+    margin: 0px 60px;
+}
+
+footer .middle-fotter .middle-content{
+    width: 60%;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+footer .middle-fotter .middle-content ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 40px 0px;
+}
+
+footer .middle-fotter .middle-content ul li a{
+    text-decoration: none;
+    color: black;
+}
+
+footer .middle-fotter .middle-content .three{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    gap: 25px;
+}
+
+footer .copyright{
+    width: 100%;
+    margin: 0px 20px;
+    background-color: #F6EDF0;
+    height: 100px;
+
+}
+
+footer .copyright p{
+    padding: 40px 80px;
+}
+
+
+
+
+
+
+
